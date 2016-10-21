@@ -1,5 +1,5 @@
 //
-//  prac.c
+//  adv-merge.c
 //  
 //
 //  Created by 민권홍 on 2016. 10. 18..
@@ -12,9 +12,10 @@
 #include <sys/time.h>
 void reverseString(char* s) {
     size_t size = strlen(s);
+    size_t i = 0;
     char temp;
     
-    for (size_t i = 0; i < size / 2; i++) {
+    for (i = 0; i < size / 2; i++) {
         temp = s[i];
         s[i] = s[(size - 1) - i];
         s[(size - 1) - i] = temp;
